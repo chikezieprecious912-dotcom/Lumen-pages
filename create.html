@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Your Story | Lumen Pages</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#fbf9ff;
+  color:#241d2e;
+}
+
+header{
+  background:white;
+  padding:18px;
+  border-bottom:1px solid #eee;
+}
+
+.logo{
+  color:#6c45a5;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.container{
+  max-width:700px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+h1{
+  color:#302040;
+}
+
+label{
+  display:block;
+  margin-top:20px;
+  margin-bottom:7px;
+  font-weight:bold;
+}
+
+input,select,textarea{
+  width:100%;
+  padding:14px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:16px;
+  box-sizing:border-box;
+}
+
+textarea{
+  min-height:220px;
+  resize:vertical;
+}
+
+button{
+  margin-top:25px;
+  padding:14px 22px;
+  border:0;
+  border-radius:10px;
+  background:#6c45a5;
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+}
+
+.back{
+  display:inline-block;
+  margin-bottom:20px;
+  color:#6c45a5;
+  text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">✦ Lumen Pages</div>
+</header>
+
+<div class="container">
+
+<a class="back" href="index.html">← Back to Lumen Pages</a>
+
+<h1>Start Your Author Journey ✍️</h1>
+
+<p>Create your novel and begin writing your story.</p>
+
+<label>Novel Title</label>
+<input type="text" placeholder="Enter your novel title">
+
+<label>Genre</label>
+<select>
+<option>Romance</option>
+<option>Drama</option>
+<option>Fantasy</option>
+<option>Mystery</option>
+<option>Thriller</option>
+<option>Adventure</option>
+<option>Other</option>
+</select>
+
+<label>Novel Description</label>
+<textarea placeholder="Tell readers what your story is about..."></textarea>
+
+<label>Chapter 1 Title</label>
+<input type="text" placeholder="Example: The Beginning">
+
+<label>Chapter 1</label>
+<textarea placeholder="Start writing your story here..."></textarea>
+
+<button onclick="saveDraft()">Save Draft</button>
+
+<p id="message"></p>
+
+</div>
+
+<script>
+function saveDraft(){
+  localStorage.setItem("lumenDraft","Your novel draft has been saved on this device.");
+  document.getElementById("message").innerText =
+  "✓ Draft saved on this device.";
+}
+</script>
+
+</body>
+</html>
