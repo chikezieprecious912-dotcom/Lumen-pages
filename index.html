@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumen Pages</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#fbf9ff;
+color:#241d2e;
+}
+
+header{
+background:white;
+padding:18px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #eee;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#6c45a5;
+}
+
+nav a{
+margin-left:15px;
+text-decoration:none;
+color:#51465d;
+}
+
+.hero{
+padding:70px 25px;
+text-align:center;
+background:linear-gradient(135deg,#f0e8fb,#ffffff);
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:15px;
+color:#302040;
+}
+
+.hero p{
+font-size:18px;
+color:#6d6475;
+max-width:600px;
+margin:auto;
+}
+
+.button{
+display:inline-block;
+margin-top:25px;
+padding:14px 22px;
+background:#6c45a5;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+
+section{
+max-width:1000px;
+margin:auto;
+padding:55px 25px;
+}
+
+h2{
+font-size:30px;
+}
+
+.stories{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:16px;
+border:1px solid #eee;
+}
+
+.cover{
+height:150px;
+background:#e9def7;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:45px;
+color:#6c45a5;
+}
+
+.writer{
+background:#eee6f8;
+border-radius:20px;
+padding:35px;
+margin:20px;
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#241d2e;
+color:white;
+}
+
+@media(max-width:700px){
+header{
+flex-direction:column;
+gap:12px;
+}
+
+nav a{
+margin:0 7px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.stories{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">✦ Lumen Pages</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#stories">Stories</a>
+<a href="#writers">Writers</a>
+</nav>
+</header>
+
+<div class="hero">
+
+<h1>Where every story finds its light.</h1>
+
+<p>
+Discover novels, follow your favourite authors,
+and share your stories with readers everywhere.
+</p>
+
+<a class="button" href="#writers">Start Writing</a>
+
+</div>
+
+<section id="stories">
+
+<h2>Featured Stories</h2>
+
+<div class="stories">
+
+<div class="card">
+<div class="cover">✦</div>
+<h3>Your First Novel</h3>
+<p>Every great story starts with one idea.</p>
+</div>
+
+<div class="card">
+<div class="cover">☾</div>
+<h3>Stories Await</h3>
+<p>Discover new worlds and new voices.</p>
+</div>
+
+<div class="card">
+<div class="cover">✎</div>
+<h3>Chapter One</h3>
+<p>Your journey as an author begins here.</p>
+</div>
+
+</div>
+</section>
+
+<section id="writers">
+
+<div class="writer">
+
+<h2>Become a Lumen Pages Author</h2>
+
+<p>
+Write your novels, publish your chapters,
+build readers and grow your author profile.
+</p>
+
+<a class="button" href="#">
+Create Your Story
+</a>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Lumen Pages</p>
+<p>Where every story finds its light.</p>
+</footer>
+
+</body>
+</html>
